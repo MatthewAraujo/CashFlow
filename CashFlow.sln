@@ -7,9 +7,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ECBC1F0F-368
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{4F7214F8-6EDA-49DA-98A0-59FF15A32221}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashFlow.API", "src\CashFlow.API\CashFlow.API.csproj", "{06125EC6-1EF9-4662-BEC4-A642595A5718}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06125EC6-1EF9-4662-BEC4-A642595A5718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06125EC6-1EF9-4662-BEC4-A642595A5718}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06125EC6-1EF9-4662-BEC4-A642595A5718}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06125EC6-1EF9-4662-BEC4-A642595A5718}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{06125EC6-1EF9-4662-BEC4-A642595A5718} = {ECBC1F0F-3688-4A5D-8305-0A18A7E8EA20}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {63569E92-0A7A-462A-A602-7379102D15BA}
