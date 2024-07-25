@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ECBC1F0F-3688-4A5D-8305-0A18A7E8EA20}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{4F7214F8-6EDA-49DA-98A0-59FF15A32221}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashFlow.API", "src\CashFlow.API\CashFlow.API.csproj", "{06125EC6-1EF9-4662-BEC4-A642595A5718}"
 EndProject
@@ -19,9 +22,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashFlow.Exception", "src\C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashFlow.Infrastructure", "src\CashFlow.Infrastructure\CashFlow.Infrastructure.csproj", "{D7DA0DA1-E50D-4555-92A1-903571CA58BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validators.Test", "tests\Validators.Test\Validators.Test.csproj", "{5BFEF630-F1BC-4E6C-8C94-ADE6A3216CE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Validators.Test", "tests\Validators.Test\Validators.Test.csproj", "{5BFEF630-F1BC-4E6C-8C94-ADE6A3216CE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonTestUtilities", "tests\CommonTestUtilities\CommonTestUtilities.csproj", "{8996E98B-A348-4646-97A5-03DC265D2D69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonTestUtilities", "tests\CommonTestUtilities\CommonTestUtilities.csproj", "{8996E98B-A348-4646-97A5-03DC265D2D69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
