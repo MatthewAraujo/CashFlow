@@ -72,7 +72,7 @@ namespace Validators.Test.Expenses.Register
             var validator = new RegisterExpenseValidator();
 
             var request = RequestRegisterExpenseJsonBuilder.Build();
-            request.Amout = amout;
+            request.Amount = amout;
 
             var result = validator.Validate(request);
 

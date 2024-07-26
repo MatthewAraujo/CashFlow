@@ -9,9 +9,9 @@ namespace CashFlow.Domain.Entities
 
         public string? Description { get; set; }
 
-        public DateTime DateTime { get; set; }
+        public DateTime Date { get; set; }
 
-        public decimal Amout { get; set; }
+        public decimal Amount { get; set; }
 
         public PaymentType PaymentType { get; set; }    
     }

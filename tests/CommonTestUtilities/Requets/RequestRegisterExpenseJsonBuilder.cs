@@ -13,7 +13,7 @@ namespace CommonTestUtilities.Requets
                 .RuleFor(r => r.Description, faker => faker.Commerce.ProductDescription())
                 .RuleFor(r => r.Date, faker => faker.Date.Past())
                 .RuleFor(r => r.PaymentType, faker => faker.PickRandom<PaymentType>())
-                .RuleFor(r => r.Amout, faker => faker.Random.Decimal(min: 2, max: 1000));
+                .RuleFor(r => r.Amount, faker => faker.Random.Decimal(min: 2, max: 1000));
         }
     }
 }
