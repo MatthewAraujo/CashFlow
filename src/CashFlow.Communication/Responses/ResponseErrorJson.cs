@@ -1,16 +1,16 @@
-﻿namespace CashFlow.Communication.Responses
+﻿
+namespace CashFlow.Communication.Responses;
+public class ResponseErrorJson
 {
-    public class ResponseErrorJson
-    {
-        public List<string> ErrorMessage { get; set; }
-        public ResponseErrorJson(string errorMessage) 
-        {
-            ErrorMessage = [errorMessage];
-        }
+    public List<string> ErrorMessages { get; set; }
 
-        public ResponseErrorJson(List<string> errorMessage) 
-        {
-            ErrorMessage = errorMessage;
-        }
+    public ResponseErrorJson(string errorMessage)
+    {
+        ErrorMessages = [errorMessage];
+    }
+
+    public ResponseErrorJson(List<string> errorMessage)
+    {
+        ErrorMessages = errorMessage;
     }
 }
