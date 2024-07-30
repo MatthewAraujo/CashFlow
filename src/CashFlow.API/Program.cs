@@ -1,4 +1,4 @@
-using CashFlow.API.Filters;
+using CashFlow.Api.Filters;
 using CashFlow.API.Middleware;
 using CashFlow.Application;
 using CashFlow.Infrastructure;
@@ -14,7 +14,7 @@ builder.Services.AddMvc(options => options.Filters.Add(typeof(ExceptionFilter)))
 
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddApplication();
-var app = builder.Build();
+var app = builder.Build(); 
 
 if (app.Environment.IsDevelopment())
 {
