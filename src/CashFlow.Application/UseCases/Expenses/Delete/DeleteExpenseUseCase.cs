@@ -21,7 +21,7 @@ public class DeleteExpenseUseCase : IDeleteExpenseUseCase
     {
         var result = await _repository.Delete(id);
 
-        if (result == false)
+        if (!result)
         {
             throw new NotFoundException(ResourceErrorMessages.EXPENSE_NOT_FOUND);
         }
