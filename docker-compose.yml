@@ -10,7 +10,7 @@ services:
       - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: mypassword
-      MYSQL_DATABASE: cashflow
+      MYSQL_DATABASE: Cash_Flow
 
 volumes:
   db_data:
