@@ -2,12 +2,25 @@ using CashFlow.Api.Filters;
 using CashFlow.API.Middleware;
 using CashFlow.Application;
 using CashFlow.Infrastructure;
+using Microsoft.OpenApi.Any;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });
+
+    // Configuração para exibir DateOnly como string no formato yyyy-MM
+    c.MapType<DateOnly>(() => new OpenApiSchema
+    {
+        Type = "string",
+        Format = "date",
+        Example = new OpenApiString("")
+    });
+});
 builder.Services.AddRouting(option => option.LowercaseUrls = true);
 
 builder.Services.AddMvc(options => options.Filters.Add(typeof(ExceptionFilter)));
