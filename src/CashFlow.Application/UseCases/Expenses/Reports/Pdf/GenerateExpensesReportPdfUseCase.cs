@@ -91,7 +91,7 @@ public class GenerateExpensesReportPdfUseCase : IGenerateExpensesReportPdfUseCas
         var document = new Document();
 
         document.Info.Title = $"{ResourceReportGenerationMessages.EXPENSES_FOR} {month:Y}";
-        document.Info.Author = "Matthew Araujo";
+        document.Info.Author = "Welisson Arley";
 
         var style = document.Styles["Normal"];
         style!.Font.Name = FontHelper.RALEWAY_REGULAR;
@@ -124,11 +124,11 @@ public class GenerateExpensesReportPdfUseCase : IGenerateExpensesReportPdfUseCas
 
         var assembly = Assembly.GetExecutingAssembly();
         var directoryName = Path.GetDirectoryName(assembly.Location);
-        var pathFile = Path.Combine(directoryName!, "Logo", "90223014.jpeg");
+        var pathFile = Path.Combine(directoryName!, "Logo", "ProfilePhoto.png");
 
         row.Cells[0].AddImage(pathFile);
 
-        row.Cells[1].AddParagraph("Hey, Matthew Araujo");
+        row.Cells[1].AddParagraph("Hey, Welisson Arley");
         row.Cells[1].Format.Font = new Font { Name = FontHelper.RALEWAY_BLACK, Size = 16 };
         row.Cells[1].VerticalAlignment = MigraDoc.DocumentObjectModel.Tables.VerticalAlignment.Center;
     }
@@ -171,7 +171,7 @@ public class GenerateExpensesReportPdfUseCase : IGenerateExpensesReportPdfUseCas
 
     private void AddHeaderForAmount(Cell cell)
     {
-        cell.AddParagraph(ResourceReportGenerationMessages.AMOUT);
+        cell.AddParagraph(ResourceReportGenerationMessages.AMOUNT);
         cell.Format.Font = new Font { Name = FontHelper.RALEWAY_BLACK, Size = 14, Color = ColorsHelper.WHITE };
         cell.Shading.Color = ColorsHelper.RED_DARK;
         cell.VerticalAlignment = VerticalAlignment.Center;

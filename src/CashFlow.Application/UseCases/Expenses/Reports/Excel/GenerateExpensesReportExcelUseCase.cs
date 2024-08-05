@@ -60,7 +60,7 @@ public class GenerateExpensesReportExcelUseCase : IGenerateExpensesReportExcelUs
         worksheet.Cell("A1").Value = ResourceReportGenerationMessages.TITLE;
         worksheet.Cell("B1").Value = ResourceReportGenerationMessages.DATE;
         worksheet.Cell("C1").Value = ResourceReportGenerationMessages.PAYMENT_TYPE;
-        worksheet.Cell("D1").Value = ResourceReportGenerationMessages.AMOUT;
+        worksheet.Cell("D1").Value = ResourceReportGenerationMessages.AMOUNT;
         worksheet.Cell("E1").Value = ResourceReportGenerationMessages.DESCRIPTION;
 
         worksheet.Cells("A1:E1").Style.Font.Bold = true;
