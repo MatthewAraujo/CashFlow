@@ -35,11 +35,15 @@ Para obter uma cópia local funcionando, siga estes passos simples.
 
 1. Clone o repositório:
     ```sh
-    git clone https://github.com/welissonArley/CashFlow.git
+    git clone https://github.com/MatthewAraujo/CashFlow.git
     ```
 
 2. Preencha as informações no arquivo `appsettings.Development.json`.
-3. Execute a API e aproveite o seu teste :)
+3. Rode as migrations com:
+   ``` terminal
+   dotnet ef migrations add InitialMigration --project .\CashFlow.Infrastructure --startup-project .\CashFlow.API\
+   ```
+5. Execute a API e aproveite o seu teste :)
 
 
 
