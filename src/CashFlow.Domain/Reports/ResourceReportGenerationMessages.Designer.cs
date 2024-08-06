@@ -8,11 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CashFlow.Domain.Reports
-{
+namespace CashFlow.Domain.Reports {
     using System;
-
-
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -23,169 +22,166 @@ namespace CashFlow.Domain.Reports
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class ResourceReportGenerationMessages
-    {
-
+    public class ResourceReportGenerationMessages {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal ResourceReportGenerationMessages()
-        {
+        internal ResourceReportGenerationMessages() {
         }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if (object.ReferenceEquals(resourceMan, null))
-                {
+        public static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CashFlow.Domain.Reports.ResourceReportGenerationMessages", typeof(ResourceReportGenerationMessages).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        public static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Amount.
         /// </summary>
-        public static string AMOUNT
-        {
-            get
-            {
-                return ResourceManager.GetString("AMOUNT", resourceCulture);
+        public static string AMOUT {
+            get {
+                return ResourceManager.GetString("AMOUT", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Cash.
         /// </summary>
-        public static string CASH
-        {
-            get
-            {
+        public static string CASH {
+            get {
                 return ResourceManager.GetString("CASH", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Credit Card.
         /// </summary>
-        public static string CREDIT_CARD
-        {
-            get
-            {
+        public static string CREDIT_CARD {
+            get {
                 return ResourceManager.GetString("CREDIT_CARD", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Date.
         /// </summary>
-        public static string DATE
-        {
-            get
-            {
+        public static string DATE {
+            get {
                 return ResourceManager.GetString("DATE", resourceCulture);
             }
         }
-
+        
         /// <summary>
-        ///   Looks up a localized string similar to Debit Card.
+        ///   Looks up a localized string similar to Debit card.
         /// </summary>
-        public static string DEBIT_CARD
-        {
-            get
-            {
+        public static string DEBIT_CARD {
+            get {
                 return ResourceManager.GetString("DEBIT_CARD", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Description.
         /// </summary>
-        public static string DESCRIPTION
-        {
-            get
-            {
+        public static string DESCRIPTION {
+            get {
                 return ResourceManager.GetString("DESCRIPTION", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Eletronic Transfer.
         /// </summary>
-        public static string ELETRONIC_TRANSFER
-        {
-            get
-            {
+        public static string ELETRONIC_TRANSFER {
+            get {
                 return ResourceManager.GetString("ELETRONIC_TRANSFER", resourceCulture);
             }
         }
-
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email is empty.
+        /// </summary>
+        public static string EMAIL_EMPTY {
+            get {
+                return ResourceManager.GetString("EMAIL_EMPTY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email is invalid.
+        /// </summary>
+        public static string EMAIL_INVALID {
+            get {
+                return ResourceManager.GetString("EMAIL_INVALID", resourceCulture);
+            }
+        }
+        
         /// <summary>
         ///   Looks up a localized string similar to Expenses for.
         /// </summary>
-        public static string EXPENSES_FOR
-        {
-            get
-            {
+        public static string EXPENSES_FOR {
+            get {
                 return ResourceManager.GetString("EXPENSES_FOR", resourceCulture);
             }
         }
-
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name is empty.
+        /// </summary>
+        public static string NAME_EMPTY {
+            get {
+                return ResourceManager.GetString("NAME_EMPTY", resourceCulture);
+            }
+        }
+        
         /// <summary>
         ///   Looks up a localized string similar to Payment Type.
         /// </summary>
-        public static string PAYMENT_TYPE
-        {
-            get
-            {
+        public static string PAYMENT_TYPE {
+            get {
                 return ResourceManager.GetString("PAYMENT_TYPE", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Title.
         /// </summary>
-        public static string TITLE
-        {
-            get
-            {
+        public static string TITLE {
+            get {
                 return ResourceManager.GetString("TITLE", resourceCulture);
             }
         }
-
+        
         /// <summary>
-        ///   Looks up a localized string similar to Total spent in {0}.
+        ///   Looks up a localized string similar to Total Spent in.
         /// </summary>
-        public static string TOTAL_SPENT_IN
-        {
-            get
-            {
+        public static string TOTAL_SPENT_IN {
+            get {
                 return ResourceManager.GetString("TOTAL_SPENT_IN", resourceCulture);
             }
         }

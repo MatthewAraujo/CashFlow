@@ -117,20 +117,65 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AMOUT" xml:space="preserve">
+    <value>Amount</value>
+  </data>
   <data name="AMOUT_MUST_BE_GREATER_THAN_ZERO" xml:space="preserve">
     <value>The Amount must be grater than zero</value>
+  </data>
+  <data name="CASH" xml:space="preserve">
+    <value>Cash</value>
+  </data>
+  <data name="CREDIT_CARD" xml:space="preserve">
+    <value>Credit Card</value>
+  </data>
+  <data name="DATE" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="DEBIT_CARD" xml:space="preserve">
+    <value>Debit card</value>
+  </data>
+  <data name="DESCRIPTION" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ELETRONIC_TRANSFER" xml:space="preserve">
+    <value>Eletronic Transfer</value>
+  </data>
+  <data name="EMAIL_EMPTY" xml:space="preserve">
+    <value>Email is empty</value>
+  </data>
+  <data name="EMAIL_INVALID" xml:space="preserve">
+    <value>Email is invalid</value>
   </data>
   <data name="EXPENSES_CANNOT_FOR_FUTURE" xml:space="preserve">
     <value>Expenses cannot be in the future</value>
   </data>
+  <data name="EXPENSES_FOR" xml:space="preserve">
+    <value>Expenses for</value>
+  </data>
   <data name="EXPENSE_NOT_FOUND" xml:space="preserve">
     <value>Expensive not found</value>
+  </data>
+  <data name="INVALID_PASSWORD" xml:space="preserve">
+    <value>Just wrong my brother</value>
+  </data>
+  <data name="NAME_EMPTY" xml:space="preserve">
+    <value>Name is empty</value>
+  </data>
+  <data name="PAYMENT_TYPE" xml:space="preserve">
+    <value>Payment Type</value>
   </data>
   <data name="PAYMENT_TYPE_INVALID" xml:space="preserve">
     <value>Payment Type is not valid</value>
   </data>
+  <data name="TITLE" xml:space="preserve">
+    <value>Title</value>
+  </data>
   <data name="TITLE_IS_REQUIRED" xml:space="preserve">
     <value>The tile is required</value>
+  </data>
+  <data name="TOTAL_SPENT_IN" xml:space="preserve">
+    <value>Total Spent in</value>
   </data>
   <data name="UNKOWN_ERROR" xml:space="preserve">
     <value>Unkown Error</value>

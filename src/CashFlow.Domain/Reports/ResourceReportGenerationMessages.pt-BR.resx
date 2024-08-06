@@ -138,13 +138,22 @@
   <data name="ELETRONIC_TRANSFER" xml:space="preserve">
     <value>Transferência eletrônica</value>
   </data>
+  <data name="EMAIL_EMPTY" xml:space="preserve">
+    <value>Email esta vazio</value>
+  </data>
+  <data name="EMAIL_INVALID" xml:space="preserve">
+    <value>Email está invalido</value>
+  </data>
   <data name="EXPENSES_FOR" xml:space="preserve">
     <value>Despesas para</value>
+  </data>
+  <data name="NAME_EMPTY" xml:space="preserve">
+    <value>Nome está vazio</value>
   </data>
   <data name="PAYMENT_TYPE" xml:space="preserve">
     <value>Tipo de Pagamento</value>
   </data>
-  <data name="Title" xml:space="preserve">
+  <data name="TITLE" xml:space="preserve">
     <value>Titulo</value>
   </data>
   <data name="TOTAL_SPENT_IN" xml:space="preserve">
