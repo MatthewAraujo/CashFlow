@@ -1,7 +1,6 @@
-﻿namespace CashFlow.Domain.Repositories.User
+﻿namespace CashFlow.Domain.Repositories.User;
+public interface IUserReadOnlyRepository
 {
-    public interface IUserReadOnlyRepository
-    {
-        Task<bool> ExistActiveUserWithEmail(string email);
-    }
+    Task<bool> ExistActiveUserWithEmail(string email);
+    Task<Entities.User?> GetUserByEmail(string email);
 }
