@@ -117,20 +117,65 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AMOUT" xml:space="preserve">
+    <value>Valor</value>
+  </data>
   <data name="AMOUT_MUST_BE_GREATER_THAN_ZERO" xml:space="preserve">
     <value>O valor tem que ser maior que zero</value>
+  </data>
+  <data name="CASH" xml:space="preserve">
+    <value>Dinheiro</value>
+  </data>
+  <data name="CREDIT_CARD" xml:space="preserve">
+    <value>Cartão de crédito</value>
+  </data>
+  <data name="DATE" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="DEBIT_CARD" xml:space="preserve">
+    <value>Cartão de débito</value>
+  </data>
+  <data name="DESCRIPTION" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="ELETRONIC_TRANSFER" xml:space="preserve">
+    <value>Transferência eletrônica</value>
+  </data>
+  <data name="EMAIL_EMPTY" xml:space="preserve">
+    <value>Email esta vazio</value>
+  </data>
+  <data name="EMAIL_INVALID" xml:space="preserve">
+    <value>Email está invalido</value>
   </data>
   <data name="EXPENSES_CANNOT_FOR_FUTURE" xml:space="preserve">
     <value>Despesas não podem ser no futuro</value>
   </data>
+  <data name="EXPENSES_FOR" xml:space="preserve">
+    <value>Despesas para</value>
+  </data>
   <data name="EXPENSE_NOT_FOUND" xml:space="preserve">
     <value>Despesa não encontrada</value>
+  </data>
+  <data name="INVALID_PASSWORD" xml:space="preserve">
+    <value>Senha incorreta</value>
+  </data>
+  <data name="NAME_EMPTY" xml:space="preserve">
+    <value>Nome está vazio</value>
+  </data>
+  <data name="PAYMENT_TYPE" xml:space="preserve">
+    <value>Tipo de Pagamento</value>
   </data>
   <data name="PAYMENT_TYPE_INVALID" xml:space="preserve">
     <value>Tipo de pagamento invalido</value>
   </data>
+  <data name="TITLE" xml:space="preserve">
+    <value>Titulo</value>
+  </data>
   <data name="TITLE_IS_REQUIRED" xml:space="preserve">
     <value>O titulo é necessia</value>
+  </data>
+  <data name="TOTAL_SPENT_IN" xml:space="preserve">
+    <value>Total gasto em </value>
   </data>
   <data name="UNKOWN_ERROR" xml:space="preserve">
     <value>Erro desconhecido</value>
