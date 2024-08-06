@@ -141,11 +141,17 @@
   <data name="ELETRONIC_TRANSFER" xml:space="preserve">
     <value>Transferência eletrônica</value>
   </data>
+  <data name="EMAIL_ALREADY_EXISTS" xml:space="preserve">
+    <value>Email ja existe</value>
+  </data>
   <data name="EMAIL_EMPTY" xml:space="preserve">
     <value>Email esta vazio</value>
   </data>
   <data name="EMAIL_INVALID" xml:space="preserve">
     <value>Email está invalido</value>
+  </data>
+  <data name="EMAIL_OR_PASSWORD_INVALID" xml:space="preserve">
+    <value>Email ou senha incorretos</value>
   </data>
   <data name="EXPENSES_CANNOT_FOR_FUTURE" xml:space="preserve">
     <value>Despesas não podem ser no futuro</value>

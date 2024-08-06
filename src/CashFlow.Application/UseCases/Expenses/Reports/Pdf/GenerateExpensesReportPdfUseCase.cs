@@ -171,7 +171,7 @@ public class GenerateExpensesReportPdfUseCase : IGenerateExpensesReportPdfUseCas
 
     private void AddHeaderForAmount(Cell cell)
     {
-        cell.AddParagraph(ResourceReportGenerationMessages.AMOUNT);
+        cell.AddParagraph(ResourceReportGenerationMessages.AMOUT);
         cell.Format.Font = new Font { Name = FontHelper.RALEWAY_BLACK, Size = 14, Color = ColorsHelper.WHITE };
         cell.Shading.Color = ColorsHelper.RED_DARK;
         cell.VerticalAlignment = VerticalAlignment.Center;
