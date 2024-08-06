@@ -5,7 +5,6 @@ using CashFlow.Infrastructure;
 using CashFlow.Infrastructure.Migrations;
 using Microsoft.OpenApi.Any;
 using Microsoft.OpenApi.Models;
-using System.Buffers;
 
 var builder = WebApplication.CreateBuilder(args);
 

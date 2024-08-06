@@ -141,6 +141,9 @@
   <data name="ELETRONIC_TRANSFER" xml:space="preserve">
     <value>Transferência eletrônica</value>
   </data>
+  <data name="EMAIL_ALREADY_EXISTS" xml:space="preserve">
+    <value>Email ja existe</value>
+  </data>
   <data name="EMAIL_EMPTY" xml:space="preserve">
     <value>Email esta vazio</value>
   </data>
