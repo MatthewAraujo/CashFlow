@@ -1,6 +1,5 @@
-﻿using Moq;
-using CashFlow.Domain.Repositories;
-
+﻿using CashFlow.Domain.Repositories;
+using Moq;
 
 namespace CommonTestUtilities.Repositories;
 public class UnitOfWorkBuilder
