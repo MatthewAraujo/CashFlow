@@ -1,5 +1,4 @@
-﻿
-namespace CashFlow.Communication.Responses;
+﻿namespace CashFlow.Communication.Responses;
 public class ResponseErrorJson
 {
     public List<string> ErrorMessages { get; set; }
