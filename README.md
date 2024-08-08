@@ -41,11 +41,7 @@ Para obter uma cópia local funcionando, siga estes passos simples.
     ```
 
 2. Preencha as informações no arquivo `appsettings.Development.json`.
-3. Rode as migrations com:
-   ``` terminal
-   dotnet ef migrations add InitialMigration --project .\CashFlow.Infrastructure --startup-project .\CashFlow.API\
-   ```
-4. Execute a API e aproveite o seu teste :)
+3. Execute a API e aproveite o seu teste :)
 
 
 <!-- Links -->
