@@ -168,11 +168,17 @@
   <data name="NAME_EMPTY" xml:space="preserve">
     <value>Nome está vazio</value>
   </data>
+  <data name="PASSWORD_DIFFERENT_CURRENT_PASSWORD" xml:space="preserve">
+    <value>As senhas estão diferentes</value>
+  </data>
   <data name="PAYMENT_TYPE" xml:space="preserve">
     <value>Tipo de Pagamento</value>
   </data>
   <data name="PAYMENT_TYPE_INVALID" xml:space="preserve">
     <value>Tipo de pagamento invalido</value>
+  </data>
+  <data name="TAG_TYPE_NOT_SUPPORTED" xml:space="preserve">
+    <value>Tipo de tag nao suportado</value>
   </data>
   <data name="TITLE" xml:space="preserve">
     <value>Titulo</value>
