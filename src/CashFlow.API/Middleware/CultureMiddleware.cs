@@ -1,38 +1,33 @@
 ﻿using System.Globalization;
 
-namespace CashFlow.API.Middleware
+namespace CashFlow.Api.Middleware;
+
+public class CultureMiddleware
 {
-    public class CultureMiddleware
+    private readonly RequestDelegate _next;
+
+    public CultureMiddleware(RequestDelegate next)
     {
-        private readonly RequestDelegate _next;
+        _next = next;
+    }
 
-        public CultureMiddleware(RequestDelegate next) 
-        { 
-            _next = next;
-        }
-        public async Task Invoke(HttpContext context) 
+    public async Task Invoke(HttpContext context)
+    {
+        var supportedLanguages = CultureInfo.GetCultures(CultureTypes.AllCultures).ToList();
+
+        var requestedCulture = context.Request.Headers.AcceptLanguage.FirstOrDefault();
+
+        var cultureInfo = new CultureInfo("en");
+
+        if (string.IsNullOrWhiteSpace(requestedCulture) == false
+            && supportedLanguages.Exists(language => language.Name.Equals(requestedCulture)))
         {
-     
-            var supportedLaqnguages = CultureInfo.GetCultures(CultureTypes.AllCultures).ToList();
-
-            var requestedCulture = context.Request.Headers.AcceptLanguage.FirstOrDefault();
-
-            
-            var culture = context.Request.Headers.AcceptLanguage.FirstOrDefault();
-
-            var cultureInfo = new CultureInfo("en");
-
-            if (
-                string.IsNullOrWhiteSpace(culture) == false 
-                && supportedLaqnguages.Exists(l => l.Name.Equals(requestedCulture))) 
-            {
-                cultureInfo = new CultureInfo(culture);
-            }
-
-            CultureInfo.CurrentCulture = cultureInfo;
-            
-            await _next(context);
-        
+            cultureInfo = new CultureInfo(requestedCulture);
         }
+
+        CultureInfo.CurrentCulture = cultureInfo;
+        CultureInfo.CurrentUICulture = cultureInfo;
+
+        await _next(context);
     }
 }
