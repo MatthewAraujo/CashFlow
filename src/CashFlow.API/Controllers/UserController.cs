@@ -1,5 +1,4 @@
-﻿
-using CashFlow.Application.UseCases.Users.ChangePassword;
+﻿using CashFlow.Application.UseCases.Users.ChangePassword;
 using CashFlow.Application.UseCases.Users.Delete;
 using CashFlow.Application.UseCases.Users.Profile;
 using CashFlow.Application.UseCases.Users.Register;
