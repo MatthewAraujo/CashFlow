@@ -13,6 +13,7 @@ using CashFlow.Api.Token;
 using CashFlow.Domain.Security.Tokens;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
+using CashFlow.Infrastructure.DataAccess;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -89,8 +90,20 @@ IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(signingKey!))
 };
 });
 
+builder.Services.AddHealthChecks().AddDbContextCheck<CashFlowDbContext>();
+
 
 var app = builder.Build();
+
+app.MapHealthChecks("/Health", new HealthCheckOptions
+{
+    AllowCachingResponses = false,
+    ResultStatusCodes =
+    {
+        [HealthStatus.Healthy] = StatusCodes.Status200OK,
+        [HealthStatus.Unhealthy] = StatusCodes.Status503ServiceUnavailable,
+    }
+});
 
 if (app.Environment.IsDevelopment())
 {
