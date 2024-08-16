@@ -98,6 +98,7 @@ public class ExpenseValidatorTests
         //Arrange
         var validator = new ExpenseValidator();
         var request = RequestExpenseJsonBuilder.Build();
+        request.Tags.Clear();
         request.Tags.Add((Tag)1000);
 
         //Act
